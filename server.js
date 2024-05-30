@@ -7,7 +7,9 @@ function generateIV() {
 }
 
 function generateKey() {
+    
     return crypto.randomBytes(32); 
+
 }
 
 function encryptBuffer(buffer, key, iv) {
